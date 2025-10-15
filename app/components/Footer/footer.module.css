@@ -1,0 +1,36 @@
+.footer {
+    background-color: #3381a8; /* color principal */
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .containerfooter {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .footer p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  /* íconos de redes */
+  .redes {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.5rem; /* tamaño de los íconos */
+  }
+  
+  .redes a:hover {
+    color: #d1d5db; /* gris clarito al pasar el mouse */
+  }
+   

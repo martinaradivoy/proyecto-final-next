@@ -1,0 +1,86 @@
+/* === NAV PRINCIPAL === */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 50; /* asegura que el nav esté por encima de otros elementos */
+}
+
+/* === LOGO === */
+.containerLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 65px;
+  height: 60px;
+}
+
+/* === MENÚ HORIZONTAL (DESKTOP) === */
+.containerNav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 0px;
+  padding-left: 0px;
+}
+
+.containerNav li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+  position: relative;
+  z-index: 20; /* asegura que los links sean clickeables */
+}
+
+.containerNav li a:hover {
+  color: #3381a8;
+}
+
+/* === BOTÓN HAMBURGUESA (OCULTO EN DESKTOP) === */
+.hamburguesa {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 60; /* por encima del menú desplegable */
+}
+
+/* === CLASE QUE ACTIVA EL MENÚ EN MÓVIL === */
+.abierto {
+  display: flex !important;
+}
+
+/* === RESPONSIVE (PANTALLAS MENORES A 992PX) === */
+@media (max-width: 992px) {
+  .hamburguesa {
+    display: block;
+  }
+
+  .containerNav {
+    display: none; /* oculto por defecto */
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem 0;
+    gap: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 40; /* debajo del botón hamburguesa */
+  }
+
+  .containerNav li {
+    text-align: center;
+  }
+}

@@ -1,0 +1,34 @@
+ 
+  .card {
+    background: #f9fafb;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cardTitulo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #3381a8;
+    margin-bottom: 0.75rem;
+  }
+  
+  .texto {
+    font-size: 1rem;
+    color: #374151;
+  }
+  

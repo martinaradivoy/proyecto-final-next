@@ -1,0 +1,52 @@
+.header {
+    background-color: white;
+    padding: 15px 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .header-container {
+    display: flex;           /* <--- clave */
+    align-items: center;     /* centra verticalmente logo y nav */
+    justify-content: space-between; /* logo a la izquierda, nav a la derecha */
+    width: 100%;
+  }
+  
+  .imgParallax {
+    position: relative;        /* necesario para el overlay */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.35); /* oscurece un poco */
+    /*backdrop-filter: blur(6px);         /* borrona la imagen */
+    z-index: 1;
+  }
+  
+  .button {
+    background-color: white;
+    color: #3381a8;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 16px;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+  }
+  
+  .button:hover {
+    background-color: #e0e0e0;
+  }
+  
+
+  
