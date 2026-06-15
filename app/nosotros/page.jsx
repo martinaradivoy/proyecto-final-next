@@ -107,18 +107,27 @@ export default function Nosotros() {
           <div className={styles.teamGrid}>
             <div className={styles.teamCard}>
               <img src="/img/persona4.jpg" alt="Integrante 1" />
-              <h4>María González</h4>
+              <h4>Natalie Portman</h4>
               <p>Directora de RRHH</p>
+              <p className={styles.descripcion}>
+                 Con más de 10 años de experiencia en gestión de talento humano, lidera el área de recursos humanos fomentando un ambiente laboral inclusivo y motivador.
+              </p>
             </div>
             <div className={styles.teamCard}>
               <img src="/img/persona2.jpg" alt="Integrante 2" />
-              <h4>Juana Perez</h4>
+              <h4>Leonardo DiCaprio</h4>
               <p>Líder de Selección</p>
+              <p className={styles.descripcion}>
+                 Especialista en reclutamiento y formación de equipos de alto rendimiento. Apasionado por conectar a las personas con su propósito profesional.
+              </p>
             </div>
             <div className={styles.teamCard}>
               <img src="/img/persona3.jpg" alt="Integrante 3" />
-              <h4>Ana Torres</h4>
+              <h4>Angelina Jolie</h4>
               <p>Coordinadora de Proyectos</p>
+              <p className={styles.descripcion}>
+                Coordina los proyectos estratégicos de la empresa con enfoque en innovación, comunicación efectiva y trabajo colaborativo.
+              </p>
             </div>
           </div>
         </div>

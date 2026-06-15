@@ -6,9 +6,13 @@
   height: 80px;
   padding: 0 20px;
   background-color: #fff;
-  position: relative;
+  position: sticky;
+  top: 0;        /* <- necesario para que funcione sticky */
+  left: 0;
+  width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 50; /* asegura que el nav esté por encima de otros elementos */
+  
 }
 
 /* === LOGO === */

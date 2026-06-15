@@ -1,6 +1,6 @@
 import styles from "./servicios.module.css";
 import Header from "../components/Header/Header";
-import Tarjeta from "../components/Targeta/Tarjeta";
+import Tarjeta from "../components/Tarjeta/Tarjeta";
 
 
 export default function Servicios() {

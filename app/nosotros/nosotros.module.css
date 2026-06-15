@@ -123,8 +123,8 @@
   }
   
   .teamCard img {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 1rem;
@@ -162,4 +162,12 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
+  .descripcion {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+  
   

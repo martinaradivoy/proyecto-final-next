@@ -43,11 +43,13 @@
     flex-direction: column;
     gap: 12px;
     margin: 0 auto;
+   align-items: center;
+
   }
   
   .input,
   .textarea {
-    width: 100%;
+    width: 60%;
     padding: 8px 12px;
     border-radius: 8px;
     border: 1px solid #ccc;
