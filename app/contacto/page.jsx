@@ -165,15 +165,15 @@ return (
         <h3>Visítanos</h3>
 
         <p>
-          3 de Febrero 798,
+          Av. 9 de Julio 1000, 
           <br />
-          Bahía Blanca,
+          B1708 Cdad. Autónoma de Buenos Aires,
           <br />
-          Buenos Aires, Argentina
+          Argentina
         </p>
 
         <iframe
-          src="https://www.google.com/maps?q=3+de+Febrero+798,+Bahía+Blanca&output=embed"
+          src="https://www.google.com/maps?q=Av.+9+de+Julio+1000,+B1708+Cdad.+Autónoma+de+Buenos+Aires&output=embed"
           width="100%"
           height="250"
           style={{
