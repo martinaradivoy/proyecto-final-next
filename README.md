@@ -1,36 +1,156 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TalentLink
 
-## Getting Started
+Plataforma web desarrollada para conectar talento profesional con oportunidades laborales.
 
-First, run the development server:
+Este proyecto fue realizado como una aplicación full stack utilizando Next.js, incorporando frontend, backend, base de datos PostgreSQL y envío de emails.
+
+## 🚀 Tecnologías utilizadas
+
+- Next.js (App Router)
+- React
+- JavaScript
+- CSS Modules
+- Prisma ORM
+- PostgreSQL con Neon
+- Resend para envío de emails
+- Vercel para deployment
+
+## ✨ Funcionalidades actuales
+
+- Página institucional
+- Sección de servicios
+- Página de contacto
+- Formulario de contacto funcional
+- API backend con Route Handlers de Next.js
+- Validación de datos
+- Persistencia de mensajes en base de datos PostgreSQL
+- Envío automático de emails mediante Resend
+
+## 📁 Estructura del proyecto
+
+```text
+app/
+├── api/
+│   └── contacto/
+│       └── route.js
+├── contacto/
+│   ├── page.jsx
+│   └── contacto.module.css
+
+lib/
+├── prisma.js
+├── email/
+│   └── resend.js
+└── validators/
+    └── contacto.js
+
+prisma/
+├── schema.prisma
+└── migrations/
+```
+
+## ⚙️ Instalación y configuración local
+
+### Clonar el repositorio
+
+```bash
+git clone https://github.com/martinaradivoy/proyecto-final-next.git
+```
+
+### Ingresar al proyecto
+
+```bash
+cd proyecto-final-next
+```
+
+### Instalar dependencias
+
+```bash
+npm install
+```
+
+### Variables de entorno
+
+Crear un archivo `.env.local` en la raíz del proyecto:
+
+```env
+DATABASE_URL=
+RESEND_API_KEY=
+```
+
+### Configuración de base de datos
+
+Ejecutar las migraciones:
+
+```bash
+npx prisma migrate dev
+```
+
+### Ejecutar el proyecto
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrir en el navegador:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🗄️ Base de datos
 
-## Learn More
+El proyecto utiliza Prisma ORM para la comunicación con PostgreSQL.
 
-To learn more about Next.js, take a look at the following resources:
+Las migraciones se encuentran dentro de:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```text
+prisma/migrations
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Para aplicar migraciones en producción:
 
-## Deploy on Vercel
+```bash
+npx prisma migrate deploy
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📧 Servicio de emails
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+El envío de emails se realiza mediante Resend.
+
+Variable necesaria:
+
+```env
+RESEND_API_KEY=
+```
+
+## 🌎 Deploy
+
+La aplicación está desplegada utilizando Vercel.
+
+Variables de entorno necesarias en producción:
+
+```env
+DATABASE_URL=
+RESEND_API_KEY=
+```
+
+## 🔒 Seguridad
+
+- Las variables sensibles se manejan mediante variables de entorno.
+- Las claves privadas no se almacenan dentro del repositorio.
+- La conexión con la base de datos se realiza mediante Prisma ORM.
+
+## 🔮 Próximas mejoras
+
+- Sistema de autenticación de usuarios.
+- Perfiles de candidatos y empresas.
+- Panel administrativo.
+- Gestión de postulaciones.
+- Notificaciones internas.
+
+## 👩‍💻 Autora
+
+Martina Radivoy
+
+Proyecto desarrollado como aplicación full stack con Next.js.
